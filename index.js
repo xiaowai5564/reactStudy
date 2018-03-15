@@ -73,7 +73,7 @@ ReactCompositeComponent.prototype.mountComponent = function (rootID) {
     }
     var renderedElement = this._instance.render();
     var renderedComponentInstance = instantiateReactComponent(renderedElement);
-    this._renderedCompoonent = renderedComponentInstance;
+    this._renderedComponent = renderedComponentInstance;
     var renderedMakeup = renderedComponentInstance.mountComponent(this._rootNodeID);
 
     $(document).on('mountReady', function () {
@@ -169,7 +169,7 @@ function hello() {
 
 // React.render(element, document.getElementById("root"))
 
-var HelloMessage = React.createClass({
+/* var HelloMessage = React.createClass({
     getInitialState: function () {
         return { type: 'say:' };
     },
@@ -185,4 +185,4 @@ var HelloMessage = React.createClass({
 });
 
 
-React.render(React.createElement(HelloMessage, { name: "John" }), document.getElementById("root"));
+React.render(React.createElement(HelloMessage, { name: "John" }), document.getElementById("root")); */
