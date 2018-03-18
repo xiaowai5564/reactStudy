@@ -16,3 +16,5 @@ js的几种继承方式
 
 
 http://www.cnblogs.com/pssp/p/5216085.html
+
+Tess test
